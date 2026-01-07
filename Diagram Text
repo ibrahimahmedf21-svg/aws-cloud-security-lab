@@ -1,0 +1,28 @@
+                   +--------------------+
+                   |      IAM Users     |
+                   |  (MFA & Roles)    |
+                   +--------------------+
+                             |
+                             v
+                   +--------------------+
+                   |    AWS Config      |
+                   |  Compliance Rules  |
+                   +--------------------+
+                             |
+                             v
++-------------------+     +--------------------+     +-----------------+
+|   CloudTrail      | --> |  Security Hub      | <-- |   GuardDuty     |
+|  Audit Logging    |     | Central Findings   |     | Threat Detection|
++-------------------+     +--------------------+     +-----------------+
+                             |
+                             v
+                   +--------------------+
+                   |      S3 Bucket     |
+                   |  Public Test / IR  |
+                   +--------------------+
+                             |
+                             v
+                   +--------------------+
+                   | Incident Response  |
+                   | Playbook & Actions |
+                   +--------------------+
