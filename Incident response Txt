@@ -1,0 +1,5 @@
+Incident: Public S3 Bucket
+Detection: AWS Config
+Impact: Public data exposure
+Containment: Blocked public access
+Recovery: Verified compliance
